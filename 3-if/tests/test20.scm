@@ -1,1 +1,0 @@
-../../2-lists/tests/test20.scm

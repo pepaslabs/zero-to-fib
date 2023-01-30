@@ -1,1 +1,0 @@
-../../4-lambda/tests/test48.scm
