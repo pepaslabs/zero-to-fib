@@ -1,0 +1,53 @@
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "define"
+            },
+            {
+                "type": "symbol",
+                "value": "x"
+            },
+            {
+                "type": "number",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "define"
+            },
+            {
+                "type": "symbol",
+                "value": "y"
+            },
+            {
+                "type": "symbol",
+                "value": "x"
+            }
+        ]
+    },
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "+"
+            },
+            {
+                "type": "symbol",
+                "value": "x"
+            },
+            {
+                "type": "symbol",
+                "value": "y"
+            }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "+"
+            },
+            {
+                "type": "number",
+                "value": 1
+            }
+        ]
+    }
+]

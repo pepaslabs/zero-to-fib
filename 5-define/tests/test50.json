@@ -1,0 +1,23 @@
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "define"
+            },
+            {
+                "type": "symbol",
+                "value": "x"
+            },
+            {
+                "type": "number",
+                "value": 42
+            }
+        ]
+    },
+    {
+        "type": "symbol",
+        "value": "x"
+    }
+]

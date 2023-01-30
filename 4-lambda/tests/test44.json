@@ -1,0 +1,46 @@
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "list",
+                "value": [
+                    {
+                        "type": "symbol",
+                        "value": "lambda"
+                    },
+                    {
+                        "type": "list",
+                        "value": [
+                            {
+                                "type": "symbol",
+                                "value": "x"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "symbol",
+                        "value": "x"
+                    }
+                ]
+            },
+            {
+                "type": "list",
+                "value": [
+                    {
+                        "type": "symbol",
+                        "value": "+"
+                    },
+                    {
+                        "type": "number",
+                        "value": 1
+                    },
+                    {
+                        "type": "number",
+                        "value": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

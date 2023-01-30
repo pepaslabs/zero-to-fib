@@ -1,0 +1,1 @@
+../../4-lambda/tests/test24.scm

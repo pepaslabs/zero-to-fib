@@ -1,0 +1,63 @@
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "define"
+            },
+            {
+                "type": "symbol",
+                "value": "inc"
+            },
+            {
+                "type": "list",
+                "value": [
+                    {
+                        "type": "symbol",
+                        "value": "lambda"
+                    },
+                    {
+                        "type": "list",
+                        "value": [
+                            {
+                                "type": "symbol",
+                                "value": "x"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "value": [
+                            {
+                                "type": "symbol",
+                                "value": "+"
+                            },
+                            {
+                                "type": "number",
+                                "value": 1
+                            },
+                            {
+                                "type": "symbol",
+                                "value": "x"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "inc"
+            },
+            {
+                "type": "number",
+                "value": 1
+            }
+        ]
+    }
+]

@@ -1,0 +1,137 @@
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "define"
+            },
+            {
+                "type": "symbol",
+                "value": "fib"
+            },
+            {
+                "type": "list",
+                "value": [
+                    {
+                        "type": "symbol",
+                        "value": "lambda"
+                    },
+                    {
+                        "type": "list",
+                        "value": [
+                            {
+                                "type": "symbol",
+                                "value": "x"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "value": [
+                            {
+                                "type": "symbol",
+                                "value": "if"
+                            },
+                            {
+                                "type": "list",
+                                "value": [
+                                    {
+                                        "type": "symbol",
+                                        "value": "<"
+                                    },
+                                    {
+                                        "type": "symbol",
+                                        "value": "x"
+                                    },
+                                    {
+                                        "type": "number",
+                                        "value": 2
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "symbol",
+                                "value": "x"
+                            },
+                            {
+                                "type": "list",
+                                "value": [
+                                    {
+                                        "type": "symbol",
+                                        "value": "+"
+                                    },
+                                    {
+                                        "type": "list",
+                                        "value": [
+                                            {
+                                                "type": "symbol",
+                                                "value": "fib"
+                                            },
+                                            {
+                                                "type": "list",
+                                                "value": [
+                                                    {
+                                                        "type": "symbol",
+                                                        "value": "+"
+                                                    },
+                                                    {
+                                                        "type": "symbol",
+                                                        "value": "x"
+                                                    },
+                                                    {
+                                                        "type": "number",
+                                                        "value": -1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "list",
+                                        "value": [
+                                            {
+                                                "type": "symbol",
+                                                "value": "fib"
+                                            },
+                                            {
+                                                "type": "list",
+                                                "value": [
+                                                    {
+                                                        "type": "symbol",
+                                                        "value": "+"
+                                                    },
+                                                    {
+                                                        "type": "symbol",
+                                                        "value": "x"
+                                                    },
+                                                    {
+                                                        "type": "number",
+                                                        "value": -2
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "fib"
+            },
+            {
+                "type": "number",
+                "value": 10
+            }
+        ]
+    }
+]

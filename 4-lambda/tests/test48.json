@@ -1,0 +1,71 @@
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "list",
+                "value": [
+                    {
+                        "type": "symbol",
+                        "value": "lambda"
+                    },
+                    {
+                        "type": "list",
+                        "value": [
+                            {
+                                "type": "symbol",
+                                "value": "a"
+                            },
+                            {
+                                "type": "symbol",
+                                "value": "b"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "value": [
+                            {
+                                "type": "symbol",
+                                "value": "if"
+                            },
+                            {
+                                "type": "list",
+                                "value": [
+                                    {
+                                        "type": "symbol",
+                                        "value": "<"
+                                    },
+                                    {
+                                        "type": "symbol",
+                                        "value": "a"
+                                    },
+                                    {
+                                        "type": "symbol",
+                                        "value": "b"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "symbol",
+                                "value": "b"
+                            },
+                            {
+                                "type": "symbol",
+                                "value": "a"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "number",
+                "value": 1
+            },
+            {
+                "type": "number",
+                "value": 2
+            }
+        ]
+    }
+]
