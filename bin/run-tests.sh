@@ -11,20 +11,35 @@ if test "$1" = "--scm" ; then
     input_ext="scm"
 fi
 
-# To test an evaluator with a different name, pass it as the first argument.
+# If handling top-level JSON arrays is problematic, pass --wrap-arrays.
+wrap_arrays=""
+if test "$1" = "--wrap-arrays" ; then
+    shift
+    wrap_arrays="true"
+fi
+
+# To test an evaluator with a different name, pass it as the last argument.
 exe="evaluator"
 if test -n "$1" ; then
     exe="$1"
 fi
 
+tempin=$( mktemp )
 tempout=$( mktemp )
 tempdiff=$( mktemp )
 
 for f in tests/test*.$input_ext ; do
     base=$( basename $f .$input_ext )
     echo "👉 $base"
+    if test "$wrap_arrays" == "true" ; then
+        echo '{ "lines":' > $tempin
+        cat $f >> $tempin
+        echo '}' >> $tempin
+    else
+        cp $f $tempin
+    fi
     set +e
-    cat $f | ./$exe > $tempout 2>&1
+    cat $tempin | ./$exe > $tempout 2>&1
     status=$?
     set -e
     if test -e tests/${base}.out ; then
