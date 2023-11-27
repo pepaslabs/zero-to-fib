@@ -4,6 +4,13 @@
 
 set -e
 
+# To use the .scm files rather than the .json files, pass --scm.
+input_ext="json"
+if test "$1" = "--scm" ; then
+    shift
+    input_ext="scm"
+fi
+
 # To test an evaluator with a different name, pass it as the first argument.
 exe="evaluator"
 if test -n "$1" ; then
@@ -13,8 +20,8 @@ fi
 tempout=$( mktemp )
 tempdiff=$( mktemp )
 
-for f in tests/test*.json ; do
-    base=$( basename $f .json )
+for f in tests/test*.$input_ext ; do
+    base=$( basename $f .$input_ext )
     echo "👉 $base"
     set +e
     cat $f | ./$exe > $tempout 2>&1

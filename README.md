@@ -145,10 +145,12 @@ A (Scheme) source code program is a sequence of statements, so the outermost JSO
 Each statement in the array will be a JSON object of the form:
 
 ```json
-{
-    "type": <number, symbol, or list>
-    "value": <a literal or an array>
-}
+[
+    {
+        "type": <number, symbol, or list>
+        "value": <a literal or an array>
+    }
+]
 ```
 
 ### Numeric literals
@@ -158,10 +160,12 @@ Each statement in the array will be a JSON object of the form:
 ```
 
 ```json
-{
-    "type": "number",
-    "value": -1.618
-}
+[
+    {
+        "type": "number",
+        "value": -1.618
+    }
+]
 ```
 
 ### Symbols
@@ -171,10 +175,12 @@ Each statement in the array will be a JSON object of the form:
 ```
 
 ```json
-{
-    "type": "symbol",
-    "value": "+"
-}
+[
+    {
+        "type": "symbol",
+        "value": "+"
+    }
+]
 ```
 
 ### Lists
@@ -184,23 +190,25 @@ Each statement in the array will be a JSON object of the form:
 ```
 
 ```json
-{
-    "type": "list",
-    "value": [
-        {
-            "type": "symbol",
-            "value": "+"
-        },
-        {
-            "type": "number",
-            "value": 1
-        },
-        {
-            "type": "number",
-            "value": 2
-        }
-    ]
-}
+[
+    {
+        "type": "list",
+        "value": [
+            {
+                "type": "symbol",
+                "value": "+"
+            },
+            {
+                "type": "number",
+                "value": 1
+            },
+            {
+                "type": "number",
+                "value": 2
+            }
+        ]
+    }
+]
 ```
 
 ### A complete program
