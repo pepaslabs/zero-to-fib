@@ -85,6 +85,7 @@ Your interpreter will be capable of evaluating statements like:
 ```scheme
 pi
 (+ 1 2)
+(+ 1 (+ 2 3) 4)
 ```
 
 
