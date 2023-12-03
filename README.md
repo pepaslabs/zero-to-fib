@@ -369,15 +369,32 @@ Each test comes in the form of three files:
 Additionally, a Bash script is included which runs all of the tests.
 
 ```
-$ ./test.sh 
-👉 test10
+$ ./run-tests.sh 
+👉 test100
 ✅
-👉 test11
+👉 test101
 ✅
-👉 test12
+👉 test102
 ✅
 ```
 
 If your evaluator produces incorrect output, a diff will be displayed:
 
 ![diff-output](.media/diff-output.png)
+
+If your language doesn't support JSON natively (i.e. C), it may be easier to operate
+on Scheme input rather than JSON input.  Pass the `--scm` option to do this.
+
+For some type systems, JSON in which the top-most structure is an array is problematic.
+To wrap the top-level array in an object (`{ "lines": [ ...`), pass the `--wrap-arrays` option.
+
+The `run-tests.sh` script expects an interpreter executable named `evaluator`.
+If your evaluator is named something else, pass that as the last argument to `run-tests.sh`.
+
+
+## Tips
+
+If you are new to Scheme, it can be helpful to have a real Scheme interpreter available
+to check your implementation against.  The [CHICKEN](https://call-cc.org/) interpreter `csi` is a convenient choice.
+
+On macOS, `brew install chicken`, then run `csi`.
